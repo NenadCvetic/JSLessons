@@ -40,3 +40,25 @@ console.log(divide(10,2));
 let anyFunction = divide;
 
 console.log(anyFunction(25,5));
+
+//passing function as and argument to other functions
+
+function sum(a , b) {
+    
+        return a + b;
+
+}
+
+function average (a , b , fn) {
+    
+        return fn(a,b) / 2;
+
+}
+
+let averageResult = average(10, 20, sum)
+
+console.log(averageResult);
+
+averageResult = average(10,20,multiply)
+
+console.log(averageResult);
