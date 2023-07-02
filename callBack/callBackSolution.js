@@ -1,4 +1,10 @@
 
+/**
+ * 
+ * First solution for dealing with asynchronous nature of JavaScript is using callback functions
+ * In 2017 they introduced async functions, await keyword
+ */
+
 function waitingForSomeData(myCallback) {
     let dataN;
     setTimeout(() => {
@@ -6,7 +12,7 @@ function waitingForSomeData(myCallback) {
         dataN = "Cydeo";
         myCallback(dataN);
     }, 5000);
-    //return dataN;
+    return dataN;
 }
 
 function functionThatGetsData (info) {
@@ -14,3 +20,5 @@ function functionThatGetsData (info) {
 }
 
 waitingForSomeData(functionThatGetsData);
+
+//alert("This is JavaScript alert") -> JavaScript commands like alert and prompt, they only work in browser with live server!!!
