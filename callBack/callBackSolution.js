@@ -21,4 +21,8 @@ function functionThatGetsData (info) {
 
 waitingForSomeData(functionThatGetsData);
 
-//alert("This is JavaScript alert") -> JavaScript commands like alert and prompt, they only work in browser with live server!!!
+//alert("This is JavaScript alert") -> JavaScript commands like alert and prompt, they only work in browser with live server!!! They require user interaction
+
+
+
+
